@@ -1,0 +1,184 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background:#eee url('/images/hierba.jpg');
+	z-index:-10;
+}
+
+a{
+	text-decoration:none;
+	font-weight:bold;
+	color:#3e5d64;
+}
+
+h2{
+	color:#069;
+}
+
+.fondo{
+	padding-top:100px;
+	width:800px;
+	height:525px;
+	margin-top:auto;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:auto;
+	background:url('/images/fondo.png') no-repeat;
+	z-index:-1;
+}
+
+#entrar{
+	display:none;
+	color:#FF0;
+	font-size:36px;
+	font-weight:bolder;
+	font-style:italic;
+	float:right;
+	margin-top:60%;
+	background:url('/images/boton.png') no-repeat;
+	padding-left:30px;
+	padding-right:10px;
+	padding-bottom:4px;
+	z-index:1;
+}
+
+a.entrar{
+	text-decoration:none;
+	color:#fe0;
+	z-index:1;
+}
+
+#indice{
+	display:none;
+	text-align:center;
+	vertical-align:middle;
+	font-size:20px;
+	float:left;
+	margin-left:-100px;
+	margin-top:-100px;
+	padding-top:10%;
+	padding-left:10px;
+	background:url('/images/indice.png') no-repeat;
+	width:100px;
+	height:465px;
+	max-height:465px;
+	z-index:1;
+}
+
+#contenedor{
+	padding-top:20px;
+	padding-bottom:20px;
+	padding-left:40px;
+	padding-right:40px;
+	margin-left:20px;
+	margin-right:20px;
+	height:465px;
+	max-height:465px;
+	background:white;
+	opacity: .85;
+   	filter: alpha(opacity = 85);
+	position:relative;
+	display:none;
+	z-index:1;
+}
+
+#cerrar{
+	float:right;
+	margin-top:-20px;
+	margin-right:-20px;
+}
+.cerrar{
+	text-decoration:none;
+	border:none;
+	width:30px;
+	height:30px;
+}
+
+#contenido{
+	color:black;
+	overflow:auto;
+	height:465px;
+	max-height:465px;
+	width:730px;
+	z-index:1;
+}
+
+#preplayer{
+	position:absolute;
+	left:0;
+	top:0;
+	display:none;
+	background:white;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:auto;
+	width:100%;
+	height:100%;
+	z-index:900;
+}
+
+#player{
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:auto;
+	margin-bottom:auto;
+	display:block;
+	width:100%;
+	height:100%;
+	z-index:900;
+}
+
+#cerrarVideo{
+	position:relative;
+	float:right;
+	margin-top:-20px;
+	margin-right:-20px;
+	z-index:999;
+}
+.cerrarVideo{
+	text-decoration:none;
+	border:none;
+	width:20px;
+	height:20px;
+	z-index:999;
+}
+
+#cerrarFoto{
+	float:right;
+	margin-top:-20px;
+	margin-right:-210px;
+	z-index:999;
+}
+.cerrarFoto{
+	text-decoration:none;
+	border:none;
+	width:20px;
+	height:20px;
+	z-index:999;
+}
+
+#prefoto{
+	display:none;
+	background:white;
+	margin-left:30px;
+	margin-right:auto;
+	margin-top:-400px;
+	width:400px;
+	height:300px;
+}
+
+#foto{
+	text-align:center;
+	vertical-align:middle; 
+	opacity: 1.0; 
+	filter: alpha(opacity = 100);
+	background-color:white;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:auto;
+	margin-bottom:auto;
+	display:block;
+	width:600px;
+	height:400px;
+}

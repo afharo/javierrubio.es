@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+    	<meta name="description" content="Página web del jugador de la cantera del Real Madrid Javier Rubio Haro">
+        <meta name="keywords" content="Javier Rubio Haro, Javier Rubio, Haro, jrubio, Javier, Rubio, Real Madrid">
+        <meta name="copyright" content="2010, Alejandro Fernández Haro">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		
+        <link type="text/css" rel="stylesheet" href="estilos/javierrubio.css">
+        
+        <script type="text/javascript" src="lib/jquery.js"></script>
+        <script src="http://static.flowplayer.org/js/tools/tools.flashembed-1.0.4.min.js"></script>
+        <script type="text/javascript" src="lib/funciones.js"></script>
+        <script type="text/javascript">
+			function mirar_barra_direcciones(){
+				var url=window.location.href;
+				var simbolo=url.indexOf('?');
+				if(simbolo!=-1){
+					seccion=url.substring(simbolo+1);
+					entrar(seccion);
+					if(window.location.href.indexOf('www')==-1){
+						document.location.href="http://www.javierrubio.es/#?"+seccion;
+					}
+				}
+				else{
+					if(window.location.href.indexOf('www')==-1){
+						document.location.href="http://www.javierrubio.es";
+					}
+				}
+			}
+			
+			function mostrar_entrar(){
+				if(window.location.href.indexOf('?')==-1)
+					$("#entrar").show();
+			}
+				
+			$(document).ready(function(){mirar_barra_direcciones(); setTimeout('mostrar_entrar();',1000);});
+			
+			// Precarga de imágenes de fondo
+			var foto=new Array();
+			foto[0]=new Image();
+			foto[0].src="images/hierba.jpg";
+			foto[1]=new Image();
+			foto[1].src="images/fondo.jpg";
+			foto[2]=new Image();
+			foto[2].src="images/boton.jpg";
+		</script>
+		<title>Javier Rubio</title>
+	</head>
+
+	<body>
+    	<div class="fondo">
+        	<div id="indice"></div>
+        	<div id="entrar">
+            	<a class="entrar" href="javascript:entrar('inicio');">ENTRAR</a>
+            </div>
+            <div id="contenedor">
+            	<div id="cerrar"><a class="cerrar" href="javascript:cerrar();"><img class="cerrar" src="images/cerrar.png" /></a></div>
+            	<div id="contenido">
+                	<center><img src="images/cargando.gif" /></center>
+	            </div>
+            </div>
+         </div>
+	</body>
+</html>

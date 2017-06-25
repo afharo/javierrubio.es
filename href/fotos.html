@@ -1,0 +1,28 @@
+<html>
+    <head>
+    	<title>Javier Rubio - Fotos</title>
+		<script>
+        var seccion="fotos";
+        var url="href/"+seccion+".html";
+        
+        if(window.location.href=="http://www.javierrubio.es/"+url||window.location.href=="http://javierrubio.es/"+url)
+            location.href="http://www.javierrubio.es/#?"+seccion;
+        </script>
+    </head>
+    
+    <body>
+    	<h2>Fotos</h2>
+        <a href="javascript:presentacion()">Ver presentación.</a>
+    	<iframe src="http://www.javierrubio.es/cgi-bin/leeRSS3.cgi" width="700px" height="370px" frameborder="0"></iframe>
+        <div id="prefoto">
+        	<div id="cerrarFoto">
+            	<a class="cerrarFoto" href='javascript:cerrarFoto()'>
+                	<img class="cerrarFoto" src="images/cerrar.png" />
+                </a>
+            </div>
+       		<div id="foto">
+            	<center><img src='images/cargando.gif' /></center>
+            </div> 
+        </div>
+    </body>
+</html>
